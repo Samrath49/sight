@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react'
+import React, { useState, useContext } from 'react';
 import { Button, TextField, Grid, Typography, Container, Paper } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
@@ -51,7 +51,7 @@ const Options = ({ children }) => {
                             <Typography gutterBottom variant="h6">Account Info</Typography>
                             <TextField label="Name" value={name} onChange={(e) => setName(e.target.value)} fullWidth />
                             <CopyToClipboard text={me} className={classes.margin}>
-                                <Button variant="contained" color="primary" fullWidth startIcon={<Assignment FontSize="large" />}>
+                                <Button variant="contained" color="primary" fullWidth startIcon={<Assignment fontSize="large" />}>
                                     Copy Your ID
                                 </Button>
                             </CopyToClipboard>
